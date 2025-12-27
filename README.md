@@ -1,136 +1,69 @@
- Supervised Learning with Python
+# 🌳 Supervised Learning – Decision Tree (Python)
 
-This repository helps you understand Supervised Learning using Python with simple and practical examples.
+## 📌 Project Overview
+This project demonstrates the implementation of the **Decision Tree algorithm**, a popular **Supervised Learning** technique, using **Python and Scikit-Learn**.
 
-We cover the two main types of supervised learning:
+The goal of this project is to help beginners and college students understand how Decision Trees work for **classification problems** through a simple and practical example.
 
- Regression
+---
 
- Classification
+## 🎯 Objectives
+- Understand supervised learning concepts
+- Implement Decision Tree classification
+- Train and test a machine learning model
+- Evaluate model performance
+- Apply decision trees to real-world–like data
 
-All examples use Python + Scikit-learn, making them easy for beginners.
+---
 
- What is Supervised Learning?
+## 🛠️ Technologies Used
+- **Python**
+- **Pandas** – data handling
+- **Scikit-Learn** – Decision Tree algorithm
+- **NumPy** – numerical operations
 
-Supervised Learning is a type of Machine Learning where:
+---
 
-We have input data (X)
+## 📊 Dataset Description
+The dataset is a simple labeled dataset representing:
+- **Hours Studied** → Input feature
+- **Pass / Fail** → Output label
 
-We have known output labels (y)
+| Hours Studied | Pass |
+|-------------|------|
+| 1 | 0 |
+| 2 | 0 |
+| 3 | 0 |
+| 4 | 1 |
+| 5 | 1 |
+| 6 | 1 |
 
-The model learns a relationship between X → y
+This makes it a **supervised learning problem**.
 
- Because the data is labeled, it is called supervised learning.
+---
 
- Example 1: Linear Regression (Regression Problem)
+## ⚙️ Methodology
+1. Import required Python libraries
+2. Create or load labeled dataset
+3. Split data into training and testing sets
+4. Train Decision Tree classifier
+5. Make predictions on test data
+6. Evaluate model accuracy
 
-Goal: Predict continuous values
+---
 
-🔹 Step 1: Import Libraries
-import numpy as np
-import matplotlib.pyplot as plt
-from sklearn.linear_model import LinearRegression
+## 🧠 Algorithm Used
+### Decision Tree Classifier
+- Uses **if–else rules** for decision-making
+- Splits data based on feature values
+- Easy to understand and interpret
+- Works well for classification problems
 
-🔹 Step 2: Create Labeled Data
-# Input data (X)
-X = np.array([1, 2, 3, 4, 5]).reshape(-1, 1)
+---
 
-# Output data (Y)
-y = np.array([2, 4, 6, 8, 10])
+## 🧪 Model Evaluation
+The model is evaluated using:
+- **Accuracy Score**
 
-
- Here:
-
-X = input
-
-y = known output
- This makes it supervised learning
-
-🔹 Step 3: Train the Model
-model = LinearRegression()
-model.fit(X, y)
-
-🔹 Step 4: Make Predictions
-prediction = model.predict([[6]])
-print("Predicted value:", prediction)
-
-🔹 Step 5: Visualization
-plt.scatter(X, y)
-plt.plot(X, model.predict(X))
-plt.xlabel("X")
-plt.ylabel("Y")
-plt.title("Linear Regression Example")
-plt.show()
-
-
- This graph shows:
-
-Actual data points
-
-Best-fit regression line
-
- Example 2: Classification using Logistic Regression
-
-Goal: Predict categories (0/1, Yes/No)
-
-🔹 Step 1: Import Libraries
-import numpy as np
-from sklearn.linear_model import LogisticRegression
-
-🔹 Step 2: Create Labeled Data
-# Hours studied
-X = np.array([1, 2, 3, 4, 5, 6]).reshape(-1, 1)
-
-# Pass (1) or Fail (0)
-y = np.array([0, 0, 0, 1, 1, 1])
-
-🔹 Step 3: Train the Model
-model = LogisticRegression()
-model.fit(X, y)
-
-🔹 Step 4: Make Prediction
-result = model.predict([[4]])
-print("Prediction (1 = Pass, 0 = Fail):", result)
-
- Train–Test Split (Important Concept)
-
-Used to test model performance on unseen data.
-
-from sklearn.model_selection import train_test_split
-
-X_train, X_test, y_train, y_test = train_test_split(
-    X, y, test_size=0.2, random_state=42
-)
-
- Model Evaluation
- For Regression (R² Score)
-from sklearn.metrics import r2_score
-
-y_pred = model.predict(X)
-print("R² Score:", r2_score(y, y_pred))
-
- For Classification (Accuracy)
-from sklearn.metrics import accuracy_score
-
-accuracy = accuracy_score(y, model.predict(X))
-print("Accuracy:", accuracy)
-
- Why These Examples Matter
-
-✔ Show complete supervised learning workflow
-✔ Beginner & college-friendly
-✔ Useful for projects, exams, and interviews
-✔ Can be reused in Medium blogs & GitHub portfolios
-✔ Explain training, prediction, and evaluation
-
- Conclusion
-
-Supervised learning becomes easy when you:
-
-✔ Have labeled data
-
-✔ Train a machine learning model
-
-✔ Evaluate the results
-
-With Python + Scikit-Learn, supervised learning is simple, powerful, and practical 🚀
+Sample Output:
+ 

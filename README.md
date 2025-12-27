@@ -61,9 +61,8 @@ This makes it a **supervised learning problem**.
 
 ---
 
-## 🧪 Model Evaluation
+ Model Evaluation
 The model is evaluated using:
 - **Accuracy Score**
 
-Sample Output:
  

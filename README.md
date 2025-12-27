@@ -1,13 +1,13 @@
-# 🌳 Supervised Learning – Decision Tree (Python)
+ Supervised Learning – Decision Tree (Python)
 
-## 📌 Project Overview
+ Project Overview
 This project demonstrates the implementation of the **Decision Tree algorithm**, a popular **Supervised Learning** technique, using **Python and Scikit-Learn**.
 
 The goal of this project is to help beginners and college students understand how Decision Trees work for **classification problems** through a simple and practical example.
 
 ---
 
-## 🎯 Objectives
+ Objectives
 - Understand supervised learning concepts
 - Implement Decision Tree classification
 - Train and test a machine learning model
@@ -16,7 +16,7 @@ The goal of this project is to help beginners and college students understand ho
 
 ---
 
-## 🛠️ Technologies Used
+ Technologies Used
 - **Python**
 - **Pandas** – data handling
 - **Scikit-Learn** – Decision Tree algorithm
@@ -24,7 +24,7 @@ The goal of this project is to help beginners and college students understand ho
 
 ---
 
-## 📊 Dataset Description
+ Dataset Description
 The dataset is a simple labeled dataset representing:
 - **Hours Studied** → Input feature
 - **Pass / Fail** → Output label
@@ -42,7 +42,7 @@ This makes it a **supervised learning problem**.
 
 ---
 
-## ⚙️ Methodology
+ Methodology
 1. Import required Python libraries
 2. Create or load labeled dataset
 3. Split data into training and testing sets
@@ -52,7 +52,7 @@ This makes it a **supervised learning problem**.
 
 ---
 
-## 🧠 Algorithm Used
+ Algorithm Used
 ### Decision Tree Classifier
 - Uses **if–else rules** for decision-making
 - Splits data based on feature values
